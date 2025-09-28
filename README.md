@@ -152,7 +152,7 @@ Notes:
 ### Prerequisites
 
 * Node.js (14+)
-* npm or yarn
+* npm 
 * Python 3.9+
 * pip
 * Optional: virtualenv
@@ -163,9 +163,8 @@ Notes:
 # from repository root
 cd server
 python -m venv .venv
-source .venv/bin/activate     # Windows: .venv\Scripts\activate
+source .venv/bin/activate    
 pip install -r requirements.txt
-# requirements.txt example: fastapi, uvicorn, pydantic, sqlmodel (optional)
 uvicorn main:app --reload --port 8000
 ```
 
