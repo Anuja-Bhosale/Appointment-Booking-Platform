@@ -46,35 +46,6 @@ Optional features included or available to add:
 
 ---
 
-## File structure (frontend)
-
-```
-public/
-  favicon.ico
-  index.html
-  logo192.png
-  logo512.png
-  manifest.json
-  robots.txt
-src/
-  App.css
-  App.js
-  App.test.js
-  index.css
-  index.js
-  logo.svg
-  reportWebVitals.js
-  setupTests.js
-.gitignore
-README.md (this file)
-package-lock.json
-package.json
-```
-
-> Backend files (example) should be in a sibling folder (e.g. `server/`) with FastAPI app, models and persistence.
-
----
-
 ## Backend API Specification
 
 ### Endpoints
@@ -253,44 +224,6 @@ curl -X POST "http://localhost:8000/appointments" -H "Content-Type: application/
 
 ---
 
-## Optional Enhancements (Ideas)
-
-* Add authentication for dentist/admin.
-* Dentist dashboard showing day/week view with cancel/reschedule functionality.
-* Email or SMS confirmations (use an external service like SendGrid/Twilio).
-* Persistent DB (Postgres / SQLite) and migrations.
-* Prevent double booking with database transactions / row locks.
-* Add timezone handling for multi-region usage.
-
----
-
-## Testing
-
-* Unit test backend endpoints (pytest + TestClient from FastAPI).
-* Integration tests that start a test DB and verify slot calculation and booking rules.
-* Frontend: react-testing-library for components, and e2e tests with Playwright or Cypress.
-
----
-
-## Deployment Notes
-
-* Serve frontend as static build (e.g., `npm run build`) with Netlify / Vercel / static host.
-* FastAPI can be deployed with Uvicorn/Gunicorn behind Nginx. Use HTTPS for production.
-* Use environment variables for configuration (DB URL, PORT, LUNCH_BREAK flag, etc.).
-
----
-
-## Contributing
-
-* Fork the repo, create a feature branch, push and open a PR. Add tests for new logic.
-
----
-
-## License
-
-* Add your chosen license here (e.g., MIT).
-
----
 
 ## Contact
 
